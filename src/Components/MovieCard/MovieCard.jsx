@@ -1,7 +1,7 @@
 import React from 'react'
 import './MovieCard.css'
 import ReactContext from '../../ReactContext/ReactContext'
-import { use } from 'react'
+import { useContext } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom'
 const MovieCard = ({ movie }) => {
   console.log(movie)
   const navigate = useNavigate()
-  const { WishlistAdd, WishListRemove, wishlist , watchlist, watchlistAdd,watchlistRemove} = use(ReactContext)
+  const { WishlistAdd, WishListRemove, wishlist , watchlist, watchlistAdd,watchlistRemove} = useContext(ReactContext)
   const isAdded = wishlist.find(item => item.id === movie.id);
   const isWatched = watchlist.find(item=>item.id===movie.id)
   const type = movie.media_type || movie.first_air_date ? 'tv' : 'movie';

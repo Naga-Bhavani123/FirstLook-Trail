@@ -52,7 +52,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <ReactContext value={{
+      <ReactContext.Provider value={{
         wishlist: wishlistArr,
         WishlistAdd: addWish,
         WishListRemove: wishremove,
@@ -78,7 +78,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Registration />} />
         </Routes>
-      </ReactContext>
+      </ReactContext.Provider>
     </BrowserRouter>
   );
   // return (

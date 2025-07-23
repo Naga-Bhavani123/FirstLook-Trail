@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './MovieDetails.css'
 import { useLocation, useParams } from 'react-router-dom';
 import ReactContext from '../../ReactContext/ReactContext';
@@ -11,7 +11,7 @@ const MovieDetails = () => {
     const navi = useNavigate()
     const movie = state?.movie;
     const type = state?.type || "movie";
-    const { WishlistAdd, watchlistAdd,wishlist ,watchlist,WishListRemove,watchlistRemove} = use(ReactContext)
+    const { WishlistAdd, watchlistAdd,wishlist ,watchlist,WishListRemove,watchlistRemove} = useContext(ReactContext)
     const watchTrailer = ()=>{
         navi(`/trailer/${movie.id}`, {state: {movie,type}})
     }

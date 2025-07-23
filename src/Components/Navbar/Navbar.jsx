@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { useContext } from 'react';
 import './Navbar.css';
 import { NavLink, useNavigate } from 'react-router-dom';
 import Search from '../SearchBar/Search';
@@ -10,7 +10,7 @@ const Navbar = () => {
     Cookie.remove("jwt_token")
     navig('/login')
   }
-  const { loggedIn } = use(ReactContext)
+  const { loggedIn } = useContext(ReactContext)
   const navigateToRegister = ()=>{
     navig('/register')
   }

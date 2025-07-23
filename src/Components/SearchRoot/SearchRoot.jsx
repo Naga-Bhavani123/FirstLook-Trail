@@ -1,11 +1,11 @@
-import React, { use, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './SearchRoot.css'
 import ReactContext from '../../ReactContext/ReactContext'
 import MovieCard from '../MovieCard/MovieCard'
 import { ClipLoader } from 'react-spinners'
 import Navbar from '../Navbar/Navbar'
 const SearchRoot = () => {
-  const {searchname} = use(ReactContext)
+  const {searchname} = useContext(ReactContext)
   const [result, setResult] = useState([])
   const [loading, setLoading] = useState(false);
 

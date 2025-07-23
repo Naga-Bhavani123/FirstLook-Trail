@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import ReactContext from '../../ReactContext/ReactContext'
-import { use } from 'react'
+import { useContext } from 'react'
 import MovieCard from '../MovieCard/MovieCard'
 import './WatchList.css'
 import { ClipLoader } from 'react-spinners'
 import Navbar from '../Navbar/Navbar'
 
 const WatchList = () => {
-  const { watchlist } = use(ReactContext)
+  const { watchlist } = useContext(ReactContext)
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {

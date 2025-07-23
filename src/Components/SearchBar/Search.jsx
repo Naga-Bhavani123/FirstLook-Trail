@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React, { useContext } from 'react'
 import './Search.css'
 import SearchRoot from '../SearchRoot/SearchRoot'
 import { useNavigate } from 'react-router-dom'
@@ -6,7 +6,7 @@ import ReactContext from '../../ReactContext/ReactContext'
 
 const Search = () => {
     const navigate = useNavigate()
-    const {search} = use(ReactContext)
+    const {search} = useContext(ReactContext)
     const SearchRoot = ()=>{
         navigate('/search-results')
 

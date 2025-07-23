@@ -1,6 +1,6 @@
 import Cookie from "js-cookie"
 
-import React, { use, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Login.css';
 import { useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
@@ -18,7 +18,7 @@ const Login = () => {
   const [message, setMessage] = useState('');
   const [trailRedirect, settraiRedirect]=useState(false)
   const [islogged, setislogged]  = useState(false)
-  const {loggedCheck}  = use(ReactContext)
+  const {loggedCheck}  = useContext(ReactContext)
 
   const handleGoogleLogin = useGoogleLogin({
         onSuccess:credentialResponse => {
