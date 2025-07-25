@@ -3,12 +3,12 @@
 * {
     margin: 0;
     padding: 0;
-    height:100vh;
     box-sizing: border-box;
 }
 
 .loginLoginDiv {
-    height: 100%;
+    height: 100vh;
+    overflow-y:hidden;
     display: flex;
     justify-content: center;
     align-items: center;
