@@ -4,7 +4,7 @@ import './WelcomeToTraiflix.css'
 const WelcomeToTraiflix = () => {
   return (
     <div className="redirectionTraiflix">
-              <h3 className="redirectTraiflixHead">Welcome To Traiflix, Please Wait...</h3>
+              <h3 className="redirectTraiflixHead">Welcome To FirtLook, Please Wait...</h3>
        </div>
   )
 }
