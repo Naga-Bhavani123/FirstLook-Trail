@@ -14,17 +14,7 @@ const HeroSection = () => {
                 </div>
             )}
 
-            <video
-                autoPlay
-                loop
-                muted
-                className={`trailer ${loaded ? 'visible' : 'hidden'}`}
-                preload="auto"
-                playsInline
-                onCanPlayThrough={() => setIsLoaded(true)}  
-            >
-                <source src="public/trailer2.mp4" />
-            </video>
+            <img src = "https://res.cloudinary.com/dcexw9qg0/image/upload/v1764063955/Gemini_Generated_Image_c28guic28guic28g_s5nrov.png"/>
 
             {/* {loaded && (
                 <div className="trailerName">
