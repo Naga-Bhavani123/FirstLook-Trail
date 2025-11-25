@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className='trailerDiv'>
 
           
-            <img src = "https://res.cloudinary.com/dcexw9qg0/image/upload/v1764063955/Gemini_Generated_Image_c28guic28guic28g_s5nrov.png"/>
+            <img src = "https://res.cloudinary.com/dcexw9qg0/image/upload/v1764064198/Screenshot_2025-11-25_151932_rmpi5w.png"/>
 
             {/* {loaded && (
                 <div className="trailerName">
